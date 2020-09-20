@@ -1,0 +1,204 @@
+body {
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#open button,
+#close button {
+    border: none;
+    outline: none;
+}
+
+.page-title {
+    border: 1px hidden blue;
+}
+
+.page-title header {
+    border: 1px hidden yellow;
+    padding: 20px;
+    font-size: 50px;
+    color: rgb(60, 60, 60);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    margin: 40px 0px 0px 0px;
+}
+
+.container .sidenav nav a {
+    display: block;
+    padding: 30px 0px 0px 0px;
+    text-decoration: none;
+    color: rgb(10, 142, 10);
+    font-size: 20px;
+    /* width:100%; */
+}
+
+.container .sidenav nav a:hover {
+    color: rgb(60, 60, 60);
+    text-decoration: underline;
+}
+
+.container .sidenav-1 nav a {
+    display: none;
+    padding: 30px 0px 0px 0px;
+    text-decoration: none;
+    color: rgb(10, 142, 10);
+    font-size: 20px;
+    /* width:100%; */
+}
+
+.container .sidenav-1 nav a:hover {
+    color: rgb(60, 60, 60);
+    text-decoration: underline;
+}
+
+.container .allhistory {
+    padding: 30px 0px 0px 0px;
+    width: 60%;
+}
+
+.container .text {
+    line-height: 30px;
+    font-size: 20px;
+    color: rgb(60, 60, 60);
+}
+
+.container .allhistory .text .small-head,
+.container .firstdays .small-head,
+.container .presentdays .small-head {
+    margin: 40px 0px 5px 0px;
+    font-size: 25px;
+    color: rgb(10, 142, 10);
+    font-weight: bold;
+}
+
+.container .allhistory .text a:hover {
+    text-decoration: none;
+    color: rgb(60, 60, 60);
+}
+
+.container .allhistory .text a {
+    color: rgb(10, 142, 10);
+}
+
+.container .firstdays,
+.container .presentdays {
+    width: 40%;
+}
+
+.container .pic img {
+    width: 500px;
+    height: 400px;
+    background-size: cover;
+    border-radius: 15px;
+}
+
+.bacgrd {
+    background-color: rgb(235, 232, 231);
+    padding: 30px;
+}
+
+.second {
+    margin: 0px;
+}
+
+.button {
+    border: 1px solid rgb(128, 128, 128);
+    display: none;
+    text-align: center;
+    padding: 10px;
+    position: absolute;
+    border-radius: 5px;
+    background-color: rgb(196, 194, 194);
+    margin-left: 20px;
+}
+
+.button:hover {
+    background-color: rgb(209, 209, 209);
+}
+
+.button button {
+    border-radius: 50%;
+    margin: 2.5px;
+    border: none;
+    outline: none;
+}
+
+@media only screen and (max-width:1000px) {
+    .page-title header {
+        font-size: 30px;
+        text-align: center;
+    }
+    .second {
+        flex-direction: column;
+    }
+    .first {
+        flex-direction: column-reverse;
+    }
+    .landsect {
+        flex-direction: column;
+    }
+    .container .firstdays,
+    .container .presentdays {
+        width: 100%;
+    }
+    .container .pic img {
+        margin-top: 40px;
+        width: 100%;
+    }
+    .allhistory {
+        width: 100% !important;
+        margin: 0px 0px;
+        text-align: center;
+    }
+    .container .sidenav {
+        display: none;
+    }
+    .button {
+        display: inline;
+        transition: display 10000s;
+    }
+    .container .sidenav a:hover {
+        color: rgb(10, 142, 10) !important;
+    }
+    #close {
+        display: none;
+    }
+    .container .sidenav-1 nav a {
+        display: block;
+        text-align: center;
+        color: rgb(240, 211, 211);
+    }
+    .container .sidenav-1 a:hover {
+        color: rgb(10, 142, 10) !important;
+    }
+    .container .sidenav-1 {
+        position: fixed;
+        top: 102px;
+        right: 0px;
+        width: 0px;
+        overflow-x: hidden;
+        transition: .5s;
+        z-index: 1;
+        height: 100%;
+        background-color: rgb(0, 0, 0);
+    }
+    iframe {
+        height: 774px;
+    }
+}
+
+@media only screen and (max-width:600px) {
+    iframe {
+        height: 860px;
+    }
+}
+
+@media only screen and (max-width:420px) {
+    iframe {
+        height: 995px;
+    }
+}
